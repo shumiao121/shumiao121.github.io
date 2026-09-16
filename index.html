@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — Kaleap</title>
+<style>
+  :root{ --bg:#fff; --ink:#1a1a1a; --muted:#5c5c5c; --rule:#e2e2e2; --link:#0a58ca }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#141414; --ink:#e6e6e6; --muted:#9a9a9a; --rule:#2e2e2e; --link:#7fb3ff }
+  }
+  *{ box-sizing:border-box }
+  body{ background:var(--bg); color:var(--ink); margin:0;
+        font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",Helvetica,Arial,sans-serif;
+        -webkit-text-size-adjust:100% }
+  main{ max-width:44rem; margin:0 auto; padding:3rem 1.25rem 6rem }
+  h1{ font-size:1.7rem; line-height:1.25; margin:0 0 1.5rem }
+  h2{ font-size:1.12rem; margin:2.4rem 0 .6rem; padding-top:1.2rem; border-top:1px solid var(--rule) }
+  p{ margin:0 0 .9rem }
+  ul{ margin:0 0 1rem; padding-left:1.3rem } li{ margin:.3rem 0 }
+  a{ color:var(--link); overflow-wrap:anywhere }
+  hr{ border:0; border-top:1px solid var(--rule); margin:2rem 0 }
+  strong{ font-weight:600 }
+  h3{ font-size:1rem; margin:1.6rem 0 .5rem }
+  blockquote{ margin:1.2rem 0; padding:.9rem 1rem; border-left:3px solid var(--link);
+               background:rgba(127,179,255,.10); border-radius:0 6px 6px 0 }
+  blockquote p{ margin:0 }
+  table{ border-collapse:collapse; width:100%; margin:1rem 0; font-size:.95rem }
+  th,td{ border:1px solid var(--rule); padding:.5rem .6rem; text-align:left; vertical-align:top }
+  th{ font-weight:600 }
+</style>
+</head><body><main>
+<h1>Privacy Policy — Kaleap</h1>
+<p><strong>Effective date:</strong> 10 September 2026 <strong>App:</strong> Kaleap (com.kaleap.camera) <strong>Provider:</strong> Xi Yang (杨曦), an individual developer (&quot;we&quot;, &quot;us&quot;) <strong>Contact:</strong> wandou121@gmail.com</p>
+<blockquote><strong>TestFlight beta note — September 2026.</strong> Cloud AI is <strong>switched on</strong> in the current beta build. (An earlier beta had it switched off; that is no longer the case.) Before the first photo ever leaves your phone, the app shows you a sheet naming who will receive it and asks you to agree — nothing is sent until you do, and you can withdraw at any time in Settings. In short: <strong>every AI request goes to fal.ai in the United States</strong> — making the picture, reading the frame for framing advice, and voicing the assistant. <strong>No image, frame or transcript is sent to mainland China.</strong> The sections below describe this in full.</blockquote>
+<p>We built Kaleap to be private by default. We do <strong>not</strong> collect your name, email, contacts, or advertising identifiers, and we never sell your data. Some features — the check-in map and the public wall — do involve your location and an anonymous device identity; those are described below. This policy explains what the app does with your data.</p>
+<h2>What the app accesses</h2>
+<p><strong>Camera.</strong> Used to show the live viewfinder and take photos, only while you are using the app. On-device analysis (framing/composition guidance, subject detection) runs locally on your phone.</p>
+<p><strong>Photos / storage.</strong> Photos you take are saved to your device and, when you choose, to your system photo library. Kaleap keeps a working &quot;original&quot; of each shot on-device so you can revert edits; you can clear these at any time from within the app.</p>
+<p><strong>Location and compass.</strong> Only if you turn on the <strong>Light</strong> feature, and only while the app is open. Used on-device to work out the sun&#x27;s position and the day&#x27;s light windows — see *Location* below. Never used in the background.</p>
+<p><strong>Microphone.</strong> Only if you use the optional voice feature. Speech recognition runs <strong>on your device</strong> — your audio is never uploaded and is not stored.</p>
+<p>What you say is turned into text on the phone. If that text is a question, or a command that needs to find something in the frame (&quot;shoot that key&quot;), <strong>the text and a single frame from the viewfinder</strong> are sent to our AI service so it can answer or locate the object.</p>
+<p>The transcribed text is also kept in a log <strong>on your device</strong> so we can see which phrasings the app failed to understand and teach it those. That log never leaves your phone — there is no code path that uploads it. You can turn it off in <strong>Settings → Privacy → &quot;Help us understand you&quot;</strong>; turning it off also deletes whatever was already kept. The log holds at most the 2,000 most recent lines.</p>
+<h2>When your images leave the device</h2>
+<p>Your photos are processed <strong>on your device</strong> by default. Images are sent to our cloud AI service only for features that need it — for example: one-tap enhance, HD upscaling, a mood transformation (anime, claymation, oil paint, etc.), background/passerby cleanup, or a deep composition tip.</p>
+<p><strong>Some of these settings stay on until you turn them off.</strong> If you pick a &quot;master&quot; look, or switch on passerby removal, that choice is remembered — and from then on <strong>every photo you take is uploaded for processing</strong>, on this and future launches, until you switch it off. You can turn them off at any time from the camera screen; with all of them off, no photo leaves your device unless you tap a cloud feature for that specific shot.</p>
+<p>When that happens:</p>
+<ul><li>The image is transmitted over an encrypted connection to our backend, which forwards it to our third-party AI processing provider (currently fal.ai, Inc., in the United States) solely to generate the result you asked for.</li><li>The result is returned to your device.</li><li>We do <strong>not</strong> use your images to identify you, to train models, or for advertising. We do not sell your data.</li></ul>
+<h3>Who processes your data, and where</h3>
+<table><thead><tr><th>Provider</th><th>What it handles</th><th>Processed in</th></tr></thead><tbody><tr><td>fal.ai, Inc.</td><td>all AI processing: image generation &amp; editing (mood transformations, master looks, passer-by removal, detail rescue), image understanding (composition tips, the voice companion looking at the scene), text replies, and text-to-speech</td><td>United States</td></tr><tr><td>Supabase</td><td>anonymous account, check-in spots, usage analytics</td><td>European Union</td></tr><tr><td>Esri / CARTO</td><td>map tiles for the check-in map</td><td>see their terms</td></tr></tbody></table>
+<p><strong>Nothing is processed in mainland China.</strong> Earlier builds of Kaleap routed image understanding, text replies and speech through providers in mainland China; as of September 2026 every AI request goes to fal.ai in the United States instead. fal.ai publishes its own list of subprocessors at <a href="https://trust.fal.ai/subprocessors.">https://trust.fal.ai/subprocessors.</a></p>
+<p><strong>We ask before the first photo leaves your phone.</strong> The first time you use a feature that needs cloud processing — a mood transformation, a master look, detail rescue, or removing strangers — Kaleap shows you a note naming these providers and asks you to agree. Nothing is sent until you do. You can withdraw that agreement at any time in Settings → Cloud processing; after that, Kaleap stays entirely on-device and those features simply stop offering to run.</p>
+<p><strong>Photos you bring in from your library</strong> are treated exactly the same way. Importing one only copies it into Kaleap&#x27;s own album on your phone; it goes to the cloud only if you then use a feature that needs it, under the same agreement described above.</p>
+<p>AI requests are relayed through our own backend, which is hosted in the United States (Google Cloud Run, us-central1). Please review the providers&#x27; terms:</p>
+<ul><li>fal.ai: <a href="https://fal.ai/legal/data-processing-addendum">https://fal.ai/legal/data-processing-addendum</a> (subprocessors: <a href="https://trust.fal.ai/subprocessors)">https://trust.fal.ai/subprocessors)</a></li><li>Supabase: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></li></ul>
+<h2>Feedback you send</h2>
+<p>If you use the in-app feedback option and tap send, your message is delivered to our internal team chat (a Feishu/Lark bot). <strong>The most recent app events are attached automatically</strong> — these are diagnostic records such as timings, feature names and photo file names on your device. They do not include your photos. This only happens when you tap send.</p>
+<h2>Usage analytics</h2>
+<p>The app records <strong>non-personal</strong> usage events (which features were used, timings, success/failure) to our backend so we can see what works and what breaks. These are tied to the anonymous identifier described below, never to your name or email, and they contain <strong>no image data</strong>.</p>
+<h2>Location</h2>
+<p><strong>Light (sun position).</strong> When you turn on the <strong>Light</strong> feature, Kaleap asks for your approximate location and reads the phone&#x27;s compass. It uses them to compute where the sun is right now, and the times of sunrise, sunset, golden hour and blue hour, so it can tell you which way to stand. <strong>That calculation is pure astronomy and runs entirely on your phone — your location is never sent anywhere for it, and no weather or other service is contacted.</strong> Only the last position is kept, rounded to about one kilometre, so the times are ready the next time you open the feature; turning the feature off stops all location and compass updates. Approximate (&quot;reduced accuracy&quot;) location is enough — Kaleap never asks for precise location for this.</p>
+<p>Kaleap requests location <strong>only while you are using the check-in map</strong>, and only after you grant permission. We use it to centre the map on you, sort nearby spots, and pre-fill the position when you create a new spot. We never track you in the background.</p>
+<p><strong>While the map is open, your current coordinates are sent to our backend</strong> on each refresh, so it can return the spots nearest you. They are used to answer that query and are not kept as a location history.</p>
+<p>Separately, when you *create* a check-in spot, the coordinates <strong>you choose on the map</strong> are stored so other people can find that spot — that one is a deliberate, public act on your part.</p>
+<p><strong>Photos you upload are stripped of EXIF/GPS metadata before leaving your device</strong>, so an uploaded photo does not reveal where it was taken beyond the spot you deliberately chose.</p>
+<h2>Anonymous identity</h2>
+<p>Kaleap has no login — you never give us a name, email, or password. To make check-ins, likes, and &quot;my check-ins&quot; work, the app creates an <strong>anonymous account</strong> on our backend and stores the resulting random identifier with the content you post. It is not linked to your real identity, and it is not shared with advertisers. Under GDPR this identifier counts as personal data, so it is disclosed here.</p>
+<p>Backend services are provided by Supabase (EU region).</p>
+<h2>On-device analysis libraries</h2>
+<p>Framing and composition guidance run <strong>on your device</strong>. On Android these use Google&#x27;s ML Kit (face detection and selfie segmentation); on iOS they use Apple&#x27;s Vision framework. <strong>Your images are not uploaded by these libraries.</strong></p>
+<p>Google&#x27;s ML Kit does send Google its own diagnostic and usage metrics from the device (not your images). We disclose this because Google&#x27;s ML Kit terms require app developers to inform users of it.</p>
+<h2>Data we do NOT collect</h2>
+<ul><li>No name, email, password, or social login</li><li>No contacts, calendar, or social graph</li><li>No advertising ID; no third-party ad networks; no cross-app tracking</li><li>No background location tracking</li></ul>
+<h2>Children</h2>
+<p>Kaleap is not directed to children under 13 and we do not knowingly collect data from them.</p>
+<h2>Retention</h2>
+<p>Photos and originals live on your device until you delete them. Images sent for cloud processing are used only to fulfill your request and are not retained by us for other purposes.</p>
+<h2>Your choices</h2>
+<ul><li>Deny or revoke Camera / Microphone / Location permission in your system settings (the related features will be unavailable; everything else keeps working).</li><li>&quot;Auto-enhance after shooting&quot; runs <strong>on your device</strong> — leaving it on does not upload anything. What sends photos to the cloud is the master look, passerby removal, mood transformations, HD and deep composition tips; switch those off to keep everything on-device.</li><li>Clear stored originals from the album at any time.</li></ul>
+<h2>Your rights in the EU/EEA and the UK</h2>
+<p>If you are in the EU, the EEA or the UK, the GDPR gives you the rights below. Because Kaleap has no login, the practical way to exercise most of them differs from apps that hold an account for you — so each one says what it actually means here.</p>
+<ul><li><strong>Access (Art. 15)</strong> — ask us what we hold about you. Almost everything Kaleap holds is on your own phone, where you can already see it. What sits on our backend is the anonymous identifier plus anything you deliberately posted (check-in spots, likes) and non-personal usage events.</li><li><strong>Rectification (Art. 16)</strong> — correct anything inaccurate. Content you posted can be edited or deleted in the app; write to us for anything else.</li><li><strong>Erasure (Art. 17)</strong> — delete what we hold. Deleting the app removes everything stored on your device. To delete backend content tied to your anonymous identifier, email us (see below) — include the identifier, which the app shows under Settings → About.</li><li><strong>Portability (Art. 20)</strong> — get your data in a machine-readable form. Your photos are already ordinary files on your phone; for backend records, ask and we will send JSON.</li><li><strong>Objection and restriction (Art. 18, 21)</strong> — tell us to stop or limit a use. You can also do this yourself at any time: Settings → Cloud processing withdraws your consent for cloud features, and denying a system permission stops the related processing.</li><li><strong>Withdraw consent (Art. 7(3))</strong> — the cloud-processing agreement can be withdrawn in Settings at any time, without affecting the lawfulness of processing before that point.</li><li><strong>Complain to a supervisory authority (Art. 77)</strong> — you can lodge a complaint with your local data protection authority.</li></ul>
+<p><strong>How to exercise them:</strong> email wandou121@gmail.com. We answer within one month, as the GDPR requires. There is no charge. Because we hold no name or email for you, we may need the anonymous identifier from Settings → About to find the right records.</p>
+<p><strong>Legal bases (Art. 6).</strong> Taking, framing and editing photos on your device happens because you asked for it — performance of the service you requested (Art. 6(1)(b)). Sending a photo to a cloud provider happens <strong>only on your consent</strong> (Art. 6(1)(a)), collected in the app before the first upload and withdrawable at any time. Non-personal usage events rest on our legitimate interest in keeping the app working (Art. 6(1)(f)).</p>
+<p><strong>International transfers (Art. 44–49).</strong> Some processing currently happens in mainland China (see the provider table above). Where we transfer personal data outside the EEA/UK, we rely on the appropriate safeguards required by Chapter V of the GDPR; you may ask us for details of the mechanism in place. If you would rather no image of yours leave your device at all, decline the cloud-processing agreement, or withdraw it later in Settings — Kaleap then runs entirely on your phone.</p>
+<h2>Changes</h2>
+<p>We may update this policy; the &quot;Effective date&quot; above will change accordingly. Material changes will be reflected in the app or store listing.</p>
+<p><strong>10 September 2026</strong> — added the *Light* feature, which uses your approximate location and the phone&#x27;s compass <strong>on the device only</strong>, to compute the sun&#x27;s position and the day&#x27;s light windows. Nothing about it is transmitted; see *Location*.</p>
+<h2>Contact</h2>
+<p>Questions? Email wandou121@gmail.com.</p>
+</main></body></html>
